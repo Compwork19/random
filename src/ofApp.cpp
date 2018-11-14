@@ -7,28 +7,30 @@ jewel.load("diamond.png");// image to use (must be stored in "random/bin/data" f
 
 std::random_device rd;
 std::mt19937 eng(rd());
-std::normal_distribution<> nd(40,1.6);
-std::normal_distribution<> nd1(50,2);
 
-for(int i=0;i<20;i++)
+//normal distribution
+/*std::normal_distribution<> nd(1000,15);
+std::normal_distribution<> nd1(800,15);
+
+for(int y=0;y<20;y++)
  cout<<nd(eng)<<endl;
  
  cout<<endl;
  
- for(int i=0;i<20;i++)
- cout<<nd1(eng)<<endl;
+ for(int x=0;x<20;x++)
+ cout<<nd1(eng)<<endl;*/
 
 //uniform distribution
-/*std::uniform_int_distribution<> un(30,1000);
+std::uniform_int_distribution<> un(30,1000);
 std::uniform_int_distribution<> un1(0,630);
 
-for(int i=0;i<20;i++)
+for(int y=0;y<20;y++)
  cout<<un(eng)<<endl;
  
  cout<<endl;
  
- for(int i=0;i<20;i++)
- cout<<un1(eng)<<endl;*/
+ for(int x=0;x<20;x++)
+ cout<<un1(eng)<<endl;
  
  
 // set of x-coordinates for jewel
